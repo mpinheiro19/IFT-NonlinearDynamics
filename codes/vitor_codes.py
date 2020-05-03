@@ -64,7 +64,7 @@ plt.style.use('seaborn')
 # if True, it also plots the phase portrait
 if True:
 	plt.figure()
-	xx =  np.arange(-3.1, 3.1, .05)
+	xx =  np.arange(-3.1, 3.1, .05) 
 	plt.plot(xx, 0*xx, 'k-' , lw=1.5)
 	plt.get_cmap('plasma')
 	for ri in r[1:-1:int(len(r)/6)]:

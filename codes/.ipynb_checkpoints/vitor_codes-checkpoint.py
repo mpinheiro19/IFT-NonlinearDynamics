@@ -1,17 +1,17 @@
-"""
-===============================
-Biffurcation diagram
-===============================
-
-Plots the stable and unstable points of a
-a dynamical 1D system. 
-"""
+#"""
+#===============================
+#Biffurcation diagram
+#===============================
+#
+#Plots the stable and unstable points of a
+#a dynamical 1D system. 
+#"""
 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-# Defining initial conditions
+## Defining initial conditions
 x0 = [-2.0, -0.5, -0.05, 0.05, 0.5, 2.0]
 
 # Defining parameter interval
@@ -20,7 +20,7 @@ RMAX = 1.0
 r = np.arange(RMIN, RMAX, .05)
 
 
-# Defining the dynamical system
+## Defining the dynamical system
 def func(x, t, r, reverse=False):
 	if reverse:
 		return -1.0*func(x,-t, r, False)
@@ -43,7 +43,7 @@ def func(x, t, r, reverse=False):
 stable = []
 unstable = []
 
-# Gets parameters
+## Gets parameters
 for x0i in x0:
 	for ri in r:
 		[x00, xn, xl] = odeint(func, x0i, [0, 1000.0, 2000.0] , args=(ri,False))
@@ -64,7 +64,7 @@ plt.style.use('seaborn')
 # if True, it also plots the phase portrait
 if True:
 	plt.figure()
-	xx =  np.arange(-3.1, 3.1, .05)
+	xx =  np.arange(-3.1, 3.1, .05) 
 	plt.plot(xx, 0*xx, 'k-' , lw=1.5)
 	plt.get_cmap('plasma')
 	for ri in r[1:-1:int(len(r)/6)]:
