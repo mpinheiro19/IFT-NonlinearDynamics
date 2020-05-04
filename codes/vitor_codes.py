@@ -1,11 +1,11 @@
-#"""
-#===============================
-#Biffurcation diagram
-#===============================
-#
-#Plots the stable and unstable points of a
-#a dynamical 1D system. 
-#"""
+"""
+===============================
+Biffurcation diagram
+===============================
+
+Plots the stable and unstable points of a
+a dynamical 1D system.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
