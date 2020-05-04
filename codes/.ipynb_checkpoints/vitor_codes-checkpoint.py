@@ -1,11 +1,11 @@
-#"""
-#===============================
-#Biffurcation diagram
-#===============================
-#
-#Plots the stable and unstable points of a
-#a dynamical 1D system. 
-#"""
+"""
+===============================
+Biffurcation diagram
+===============================
+
+Plots the stable and unstable points of a
+a dynamical 1D system.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,7 +51,7 @@ for x0i in x0:
 			stable.append(xn)
 		else:
 			stable.append(float('nan'))
-for ri in r:
+    for ri in r:
 		[x00, xn, xl] = odeint(func, x0i, [0, 1000.0, 2000.0] , args=(ri,True))
 		if abs(xn-xl) < 1e-4:
 			unstable.append(xn)
