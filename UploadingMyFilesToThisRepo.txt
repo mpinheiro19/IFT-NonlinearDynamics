@@ -1,0 +1,16 @@
+YOU SHALL NOT PASS
+
+Step-by-step guide "How can I 'send' my files to this repository?"
+
+1) Create a github account at https://github.com/
+2) Visit our public repository at https://github.com/mpinheiro19/IFT-NonlinearDynamics
+
+Setting up the environment
+3) Fork this repository into your account (HELP: https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+	Forking an public repository allow you to make changes into original one
+4) Download GitHub Desktop App (trust me, if you don't know what are you doing, this is the best way)
+5) Fulfil main instalation procedure: next>next>next>ok>whatever>install
+6) Make changes into 'YOUR FORKED' repository and, after completed, commit/push to master origin
+
+7) Main author will receive an e-mail and accept/regect your submission.
+8) PROFIT
